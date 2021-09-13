@@ -1,7 +1,6 @@
 package com.carrotato.main;
 
 import com.carrotato.blocks.ModBlocks;
-import com.carrotato.main.CraftingManager;
 import com.carrotato.lib.RefStrings;
 
 import cpw.mods.fml.common.Mod;
