@@ -18,8 +18,18 @@ public class ModBlocks {
 	public static Block block_potato;
 	
 	private static void initializeBlock() {
-		block_carrot = new BlockGeneric(Material.plants).setBlockName("block_carrot").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_carrot");
-		block_potato = new BlockGeneric(Material.plants).setBlockName("block_potato").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_potato");
+		block_carrot = new BlockGeneric(Material.plants)
+				.setBlockName("block_carrot")
+				.setCreativeTab(CreativeTabs.tabFood)
+				.setHardness(0.5F)
+				.setResistance(0.1F)
+				.setBlockTextureName(RefStrings.MODID + ":block_carrot");
+		block_potato = new BlockGeneric(Material.plants)
+				.setBlockName("block_potato")
+				.setCreativeTab(CreativeTabs.tabFood)
+				.setHardness(0.5F)
+				.setResistance(0.1F)
+				.setBlockTextureName(RefStrings.MODID + ":block_potato");
 	}
 	
 	private static void registerBlock() {
