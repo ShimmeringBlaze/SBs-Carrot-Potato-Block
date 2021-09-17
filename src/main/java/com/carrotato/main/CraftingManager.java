@@ -16,8 +16,8 @@ public class CraftingManager {
 		// Blocks crafting (to-from)
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_carrot, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_carrot});
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_potato, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_potato});
-		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_carrot, 9), new Object[] { "#", '#', Item.getItemFromBlock(ModBlocks.block_carrot) });
-		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_potato, 9), new Object[] { "#", '#', Item.getItemFromBlock(ModBlocks.block_potato) });
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_carrot, 9), new Object[] { "#", '#', ModBlocks.block_carrot });
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_potato, 9), new Object[] { "#", '#', ModBlocks.block_potato });
 		
 		// Item crafting (to-from)
 		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_carrot, 1), new Object[] { "###", "###", "###", '#', Items.carrot});
