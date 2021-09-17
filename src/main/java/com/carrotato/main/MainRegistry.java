@@ -1,6 +1,7 @@
 package com.carrotato.main;
 
 import com.carrotato.blocks.ModBlocks;
+import com.carrotato.items.ModItems;
 import com.carrotato.lib.RefStrings;
 
 import cpw.mods.fml.common.Mod;
@@ -16,6 +17,7 @@ public class MainRegistry {
 	
 	@EventHandler
 	public void PreLoad(FMLPreInitializationEvent PreEvent) {
+		ModItems.mainRegistry();
 		ModBlocks.mainRegistry();
 		CraftingManager.mainRegistry();
 	}
