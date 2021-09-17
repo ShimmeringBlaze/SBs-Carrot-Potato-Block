@@ -1,2 +1,4 @@
 tile.block_carrot.name=Block of Carrots
 tile.block_potato.name=Block of Potatoes
+item.ingot_carrot.name=Carrot Ingot
+item.ingot_potato.name=Potato Ingot
