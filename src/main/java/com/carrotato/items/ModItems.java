@@ -1,5 +1,6 @@
 package com.carrotato.items;
 
+import com.carrotato.items.food.ItemIngot;
 import com.carrotato.lib.RefStrings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -18,11 +19,11 @@ public class ModItems {
 	public static Item ingot_potato;
 	
 	private static void initializeItem() {
-		ingot_carrot = new Item()
+		ingot_carrot = new ItemIngot(10, 20, false)
 				.setUnlocalizedName("ingot_carrot")
 				.setCreativeTab(CreativeTabs.tabFood)
 				.setTextureName(RefStrings.MODID + ":ingot_carrot");
-		ingot_potato = new Item()
+		ingot_potato = new ItemIngot(10, 20, false)
 				.setUnlocalizedName("ingot_potato")
 				.setCreativeTab(CreativeTabs.tabFood)
 				.setTextureName(RefStrings.MODID + ":ingot_potato");
