@@ -15,13 +15,21 @@ public class CraftingManager {
 		// Blocks crafting (to-from)
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_carrot, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_carrot});
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_potato, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_potato});
-		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_carrot, 9), new Object[] { "#", '#', ModBlocks.block_carrot });
-		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_potato, 9), new Object[] { "#", '#', ModBlocks.block_potato });
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_baked, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_baked});
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_carrot, 9), new Object[] { "#", '#', ModBlocks.block_carrot});
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_potato, 9), new Object[] { "#", '#', ModBlocks.block_potato});
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_baked, 9), new Object[] { "#", '#', ModBlocks.block_baked});
 		
 		// Item crafting (to-from)
 		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_carrot, 1), new Object[] { "###", "###", "###", '#', Items.carrot});
 		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_potato, 1), new Object[] { "###", "###", "###", '#', Items.potato});
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_baked, 1), new Object [] { "###", "###", "###", '#', Items.baked_potato});
 		GameRegistry.addRecipe(new ItemStack(Items.carrot, 9), new Object[] { "#", '#', ModItems.ingot_carrot});
 		GameRegistry.addRecipe(new ItemStack(Items.potato, 9), new Object[] { "#", '#', ModItems.ingot_potato});
+		GameRegistry.addRecipe(new ItemStack(Items.baked_potato, 9), new Object[] { "#", '#', ModItems.ingot_baked});
+		
+		// Baked Potato smelting
+		GameRegistry.addSmelting(ModItems.ingot_potato, new ItemStack(ModItems.ingot_baked, 1), 3.15F);
+		GameRegistry.addSmelting(ModBlocks.block_potato, new ItemStack(ModBlocks.block_baked, 1), 28.35F);
 	}
 }

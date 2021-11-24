@@ -1,4 +1,6 @@
 tile.block_carrot.name=Block of Carrots
 tile.block_potato.name=Block of Potatoes
+tile.block_baked.name=Block of Baked Potatoes
 item.ingot_carrot.name=Carrot Ingot
 item.ingot_potato.name=Potato Ingot
+item.ingot_baked.name=Baked Potato Ingot

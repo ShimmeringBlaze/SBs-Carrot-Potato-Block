@@ -16,6 +16,7 @@ public class ModBlocks {
 	}
 	public static Block block_carrot;
 	public static Block block_potato;
+	public static Block block_baked;
 	
 	private static void initializeBlock() {
 		block_carrot = new BlockGeneric(Material.plants)
@@ -30,10 +31,17 @@ public class ModBlocks {
 				.setHardness(0.5F)
 				.setResistance(0.1F)
 				.setBlockTextureName(RefStrings.MODID + ":block_potato");
+		block_baked = new BlockGeneric(Material.plants)
+				.setBlockName("block_baked")
+				.setCreativeTab(CreativeTabs.tabFood)
+				.setHardness(0.5F)
+				.setResistance(0.1F)
+				.setBlockTextureName(RefStrings.MODID + ":block_baked");
 	}
 	
 	private static void registerBlock() {
 		GameRegistry.registerBlock(block_carrot, block_carrot.getUnlocalizedName());
 		GameRegistry.registerBlock(block_potato, block_potato.getUnlocalizedName());
+		GameRegistry.registerBlock(block_baked, block_baked.getUnlocalizedName());
 	}
 }
