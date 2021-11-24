@@ -34,5 +34,6 @@ public class ModItems {
 		GameRegistry.registerItem(ingot_potato, ingot_potato.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_baked, ingot_baked.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_apple, ingot_apple.getUnlocalizedName());
+		GameRegistry.registerItem(ingot_melon, ingot_melon.getUnlocalizedName());
 	}
 }

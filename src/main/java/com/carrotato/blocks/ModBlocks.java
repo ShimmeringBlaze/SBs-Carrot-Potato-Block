@@ -33,5 +33,6 @@ public class ModBlocks {
 		GameRegistry.registerBlock(block_potato, block_potato.getUnlocalizedName());
 		GameRegistry.registerBlock(block_baked, block_baked.getUnlocalizedName());
 		GameRegistry.registerBlock(block_apple, block_apple.getUnlocalizedName());
+		GameRegistry.registerBlock(block_melon, block_melon.getUnlocalizedName());
 	}
 }
