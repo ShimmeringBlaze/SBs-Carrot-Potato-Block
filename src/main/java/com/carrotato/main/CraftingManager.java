@@ -26,9 +26,15 @@ public class CraftingManager {
 		
 		// Baked Potatoes
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_baked, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_baked});
-		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_baked, 1), new Object [] { "###", "###", "###", '#', Items.baked_potato});
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_baked, 1), new Object[] { "###", "###", "###", '#', Items.baked_potato});
 		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_baked, 9), new Object[] { "#", '#', ModBlocks.block_baked});
 		GameRegistry.addRecipe(new ItemStack(Items.baked_potato, 9), new Object[] { "#", '#', ModItems.ingot_baked});
+		
+		// Apples
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_apple, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_apple});
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_apple, 1), new Object[] { "###", "###", "###", '#', Items.apple});
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_apple, 9), new Object[] { "#", '#', ModBlocks.block_apple});
+		GameRegistry.addRecipe(new ItemStack(Items.apple, 9), new Object[] { "#", '#', ModItems.ingot_apple});
 		
 		// Cooking
 		GameRegistry.addSmelting(ModItems.ingot_potato, new ItemStack(ModItems.ingot_baked, 1), 3.15F);

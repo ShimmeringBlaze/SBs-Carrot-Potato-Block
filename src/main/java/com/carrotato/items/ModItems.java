@@ -18,6 +18,7 @@ public class ModItems {
 	public static Item ingot_carrot;
 	public static Item ingot_potato;
 	public static Item ingot_baked;
+	public static Item ingot_apple;
 	
 	private static void initializeItem() {
 		ingot_carrot = new ItemIngot(27, 32, false)
@@ -32,11 +33,16 @@ public class ModItems {
 				.setUnlocalizedName("ingot_baked")
 				.setCreativeTab(CreativeTabs.tabFood)
 				.setTextureName(RefStrings.MODID + ":ingot_baked");
+		ingot_apple = new ItemIngot(36, 22, false)
+				.setUnlocalizedName("ingot_apple")
+				.setCreativeTab(CreativeTabs.tabFood)
+				.setTextureName(RefStrings.MODID + ":ingot_apple");
 	}
 	
 	private static void registerItem() {
 		GameRegistry.registerItem(ingot_carrot, ingot_carrot.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_potato, ingot_potato.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_baked, ingot_baked.getUnlocalizedName());
+		GameRegistry.registerItem(ingot_apple, ingot_apple.getUnlocalizedName());
 	}
 }
