@@ -18,32 +18,14 @@ public class ModBlocks {
 	public static Block block_potato;
 	public static Block block_baked;
 	public static Block block_apple;
+	public static Block block_melon;
 	
 	private static void initializeBlock() {
-		block_carrot = new BlockGeneric(Material.plants)
-				.setBlockName("block_carrot")
-				.setCreativeTab(CreativeTabs.tabFood)
-				.setHardness(0.5F)
-				.setResistance(0.1F)
-				.setBlockTextureName(RefStrings.MODID + ":block_carrot");
-		block_potato = new BlockGeneric(Material.plants)
-				.setBlockName("block_potato")
-				.setCreativeTab(CreativeTabs.tabFood)
-				.setHardness(0.5F)
-				.setResistance(0.1F)
-				.setBlockTextureName(RefStrings.MODID + ":block_potato");
-		block_baked = new BlockGeneric(Material.plants)
-				.setBlockName("block_baked")
-				.setCreativeTab(CreativeTabs.tabFood)
-				.setHardness(0.5F)
-				.setResistance(0.1F)
-				.setBlockTextureName(RefStrings.MODID + ":block_baked");
-		block_apple = new BlockGeneric(Material.plants)
-				.setBlockName("block_apple")
-				.setCreativeTab(CreativeTabs.tabFood)
-				.setHardness(0.5F)
-				.setResistance(0.1F)
-				.setBlockTextureName(RefStrings.MODID + ":block_apple");
+		block_carrot = new BlockGeneric(Material.plants).setBlockName("block_carrot").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_carrot");
+		block_potato = new BlockGeneric(Material.plants).setBlockName("block_potato").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_potato");
+		block_baked = new BlockGeneric(Material.plants).setBlockName("block_baked").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_baked");
+		block_apple = new BlockGeneric(Material.plants).setBlockName("block_apple").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_apple");
+		block_melon = new BlockGeneric(Material.plants).setBlockName("block_melon").setCreativeTab(CreativeTabs.tabFood).setHardness(5F).setResistance(2F).setBlockTextureName(RefStrings.MODID + ":block_melon");
 	}
 	
 	private static void registerBlock() {
