@@ -20,6 +20,7 @@ public class ModItems {
 	public static Item ingot_baked;
 	public static Item ingot_apple;
 	public static Item ingot_melon;
+	public static Item ingot_cookie;
 	
 	private static void initializeItem() {
 		ingot_carrot = new ItemIngot(27, 32, false).setUnlocalizedName("ingot_carrot").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_carrot");
@@ -27,6 +28,7 @@ public class ModItems {
 		ingot_baked = new ItemIngot(45, 54, false).setUnlocalizedName("ingot_baked").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_baked");
 		ingot_apple = new ItemIngot(36, 22, false).setUnlocalizedName("ingot_apple").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_apple");
 		ingot_melon = new ItemIngot(162, 97, false).setUnlocalizedName("ingot_melon").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_melon");
+		ingot_cookie = new ItemIngot(18, 4, false).setUnlocalizedName("ingot_cookie").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_lazy");
 	}
 	
 	private static void registerItem() {
@@ -35,5 +37,6 @@ public class ModItems {
 		GameRegistry.registerItem(ingot_baked, ingot_baked.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_apple, ingot_apple.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_melon, ingot_melon.getUnlocalizedName());
+		GameRegistry.registerItem(ingot_cookie, ingot_cookie.getUnlocalizedName());
 	}
 }

@@ -19,6 +19,7 @@ public class ModBlocks {
 	public static Block block_baked;
 	public static Block block_apple;
 	public static Block block_melon;
+	public static Block block_cookie;
 	
 	private static void initializeBlock() {
 		block_carrot = new BlockGeneric(Material.plants).setBlockName("block_carrot").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_carrot");
@@ -26,6 +27,7 @@ public class ModBlocks {
 		block_baked = new BlockGeneric(Material.plants).setBlockName("block_baked").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_baked");
 		block_apple = new BlockGeneric(Material.plants).setBlockName("block_apple").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_apple");
 		block_melon = new BlockGeneric(Material.plants).setBlockName("block_melon").setCreativeTab(CreativeTabs.tabFood).setHardness(5F).setResistance(2F).setBlockTextureName(RefStrings.MODID + ":block_melon");
+		block_cookie = new BlockGeneric(Material.plants).setBlockName("block_cookie").setCreativeTab(CreativeTabs.tabFood).setHardness(0.5F).setResistance(0.1F).setBlockTextureName(RefStrings.MODID + ":block_cookie");
 	}
 	
 	private static void registerBlock() {
@@ -34,5 +36,6 @@ public class ModBlocks {
 		GameRegistry.registerBlock(block_baked, block_baked.getUnlocalizedName());
 		GameRegistry.registerBlock(block_apple, block_apple.getUnlocalizedName());
 		GameRegistry.registerBlock(block_melon, block_melon.getUnlocalizedName());
+		GameRegistry.registerBlock(block_cookie, block_cookie.getUnlocalizedName());
 	}
 }

@@ -44,6 +44,12 @@ public class CraftingManager {
 		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_melon, 9), new Object[] { "#", '#', ModBlocks.block_melon}); // Blocks to ingots
 		GameRegistry.addRecipe(new ItemStack(Blocks.melon_block, 9), new Object[] { "#", '#', ModItems.ingot_melon}); // Ingots to items
 		
+		// Cookies
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_cookie, 1), new Object[] {"###", "###", "###", '#', ModItems.ingot_cookie}); // Ingots to blocks
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_cookie, 1), new Object[] {"###", "###", "###", '#', Items.cookie}); // Items to ingots
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_cookie, 9), new Object[] {"#", '#', ModBlocks.block_cookie}); // Blocks to ingots
+		GameRegistry.addRecipe(new ItemStack(Items.cookie, 9), new Object[] { "#", '#', ModItems.ingot_cookie}); // Ingots to items
+		
 		// Cooking
 		GameRegistry.addSmelting(ModItems.ingot_potato, new ItemStack(ModItems.ingot_baked, 1), 3.15F);
 		GameRegistry.addSmelting(ModBlocks.block_potato, new ItemStack(ModBlocks.block_baked, 1), 28.35F);
