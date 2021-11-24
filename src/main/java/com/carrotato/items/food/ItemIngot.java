@@ -19,8 +19,7 @@ public class ItemIngot extends ItemFood{
 		
 		if (this == ModItems.ingot_melon) {
 			list.add("Did you seriously just stuff 9 whole");
-			list.add("melons into a single ingot? What were");
-			list.add("you thinking?");
+			list.add("melons into a single ingot? What were you thinking?");
 			list.add("Well, at least it's bound to be filling");
 		}
 	}
