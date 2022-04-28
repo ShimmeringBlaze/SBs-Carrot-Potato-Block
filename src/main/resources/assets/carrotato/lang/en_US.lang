@@ -4,6 +4,8 @@ tile.block_baked.name=Block of Baked Potatoes
 tile.block_apple.name=Block of Apples
 tile.block_melon.name=Block of Melons
 tile.block_cookie.name=Block of Cookies
+tile.block_beefraw.name=Block of Raw Beef
+tile.block_beefunraw.name=Block of Steak
 
 item.ingot_carrot.name=Carrot Ingot
 item.ingot_potato.name=Potato Ingot
@@ -11,3 +13,5 @@ item.ingot_baked.name=Baked Potato Ingot
 item.ingot_apple.name=Apple Ingot
 item.ingot_melon.name=Melon Ingot
 item.ingot_cookie.name=Cookie Ingot
+item.ingot_beefraw.name=Raw Beef Ingot
+item.ingot_beefunraw.name=Steak Ingot

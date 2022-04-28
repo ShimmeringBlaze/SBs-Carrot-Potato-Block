@@ -21,7 +21,11 @@ public class ModItems {
 	public static Item ingot_apple;
 	public static Item ingot_melon;
 	public static Item ingot_cookie;
+	public static Item ingot_beefraw;
+	public static Item ingot_beefunraw;
 	
+	/* TODO: Fix the goddamn saturation values and stop reading the minecraft wiki for this shit, use the vanilla code for fucks sake
+	 since it looks like the wiki and code values for saturation are different, you fucking lunatic */
 	private static void initializeItem() {
 		ingot_carrot = new ItemIngot(27, 32, false).setUnlocalizedName("ingot_carrot").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_carrot");
 		ingot_potato = new ItemIngot(9, 9, false).setUnlocalizedName("ingot_potato").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_potato");
@@ -29,6 +33,8 @@ public class ModItems {
 		ingot_apple = new ItemIngot(36, 22, false).setUnlocalizedName("ingot_apple").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_apple");
 		ingot_melon = new ItemIngot(162, 97, false).setUnlocalizedName("ingot_melon").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_melon");
 		ingot_cookie = new ItemIngot(18, 4, false).setUnlocalizedName("ingot_cookie").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_lazy");
+		ingot_beefraw = new ItemIngot(27, 16, true).setUnlocalizedName("ingot_beefraw").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_beefraw");
+		ingot_beefunraw = new ItemIngot(72, 117, true).setUnlocalizedName("ingot_beefunraw").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_beefunraw");
 	}
 	
 	private static void registerItem() {
@@ -38,5 +44,7 @@ public class ModItems {
 		GameRegistry.registerItem(ingot_apple, ingot_apple.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_melon, ingot_melon.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_cookie, ingot_cookie.getUnlocalizedName());
+		GameRegistry.registerItem(ingot_beefraw, ingot_beefraw.getUnlocalizedName());
+		GameRegistry.registerItem(ingot_beefunraw, ingot_beefunraw.getUnlocalizedName());
 	}
 }

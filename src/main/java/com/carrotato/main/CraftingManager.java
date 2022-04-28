@@ -45,13 +45,27 @@ public class CraftingManager {
 		GameRegistry.addRecipe(new ItemStack(Blocks.melon_block, 9), new Object[] { "#", '#', ModItems.ingot_melon}); // Ingots to items
 		
 		// Cookies
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_cookie, 1), new Object[] {"###", "###", "###", '#', ModItems.ingot_cookie}); // Ingots to blocks
-		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_cookie, 1), new Object[] {"###", "###", "###", '#', Items.cookie}); // Items to ingots
-		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_cookie, 9), new Object[] {"#", '#', ModBlocks.block_cookie}); // Blocks to ingots
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_cookie, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_cookie}); // Ingots to blocks
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_cookie, 1), new Object[] { "###", "###", "###", '#', Items.cookie}); // Items to ingots
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_cookie, 9), new Object[] { "#", '#', ModBlocks.block_cookie}); // Blocks to ingots
 		GameRegistry.addRecipe(new ItemStack(Items.cookie, 9), new Object[] { "#", '#', ModItems.ingot_cookie}); // Ingots to items
+		
+		// Raw Beef
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_beefraw, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_beefraw}); // Ingots to blocks
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_beefraw, 1), new Object[] { "###", "###", "###", '#', Items.beef}); // Items to ingots
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_beefraw, 9), new Object[] { "#", '#', ModBlocks.block_beefraw}); // Blocks to ingots
+		GameRegistry.addRecipe(new ItemStack(Items.beef, 9), new Object[] { "#", '#', ModItems.ingot_beefraw}); // Ingots to items
+		
+		// Cooked Beef
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.block_beefunraw, 1), new Object[] { "###", "###", "###", '#', ModItems.ingot_beefunraw}); // Ingots to blocks
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_beefunraw, 1), new Object[] { "###", "###", "###", '#', Items.cooked_beef}); // Items to ingots
+		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_beefunraw, 9), new Object[] {"#", '#', ModBlocks.block_beefunraw}); // Blocks to ingots
+		GameRegistry.addRecipe(new ItemStack(Items.cooked_beef, 9), new Object[] { "#", '#', ModItems.ingot_beefunraw}); // Ingots to items
 		
 		// Cooking
 		GameRegistry.addSmelting(ModItems.ingot_potato, new ItemStack(ModItems.ingot_baked, 1), 3.15F);
 		GameRegistry.addSmelting(ModBlocks.block_potato, new ItemStack(ModBlocks.block_baked, 1), 28.35F);
+		GameRegistry.addSmelting(ModItems.ingot_beefraw, new ItemStack(ModItems.ingot_beefunraw, 1), 3.15F);
+		GameRegistry.addSmelting(ModBlocks.block_beefraw, new ItemStack(ModBlocks.block_beefunraw, 1), 28.35F);
 	}
 }
