@@ -3,7 +3,6 @@ package com.carrotato.items.food;
 import java.util.List;
 
 import com.carrotato.items.ModItems;
-import com.carrotato.blocks.ModBlocks;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;

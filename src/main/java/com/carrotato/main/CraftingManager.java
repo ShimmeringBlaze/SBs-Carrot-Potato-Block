@@ -62,6 +62,10 @@ public class CraftingManager {
 		GameRegistry.addRecipe(new ItemStack(ModItems.ingot_beefunraw, 9), "#", '#', ModBlocks.block_beefunraw); // Blocks to ingots
 		GameRegistry.addRecipe(new ItemStack(Items.cooked_beef, 9), "#", '#', ModItems.ingot_beefunraw); // Ingots to items
 		
+		// Speed Sugar
+		GameRegistry.addRecipe(new ItemStack(ModItems.edible_sugar, 1), "#", '#', Items.sugar);
+		GameRegistry.addRecipe(new ItemStack(Items.sugar, 1), "#", '#', ModItems.edible_sugar);
+		
 		// Cooking
 		GameRegistry.addSmelting(ModItems.ingot_potato, new ItemStack(ModItems.ingot_baked, 1), 3.15F);
 		GameRegistry.addSmelting(ModBlocks.block_potato, new ItemStack(ModBlocks.block_baked, 1), 28.35F);
