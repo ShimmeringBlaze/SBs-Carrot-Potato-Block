@@ -22,8 +22,8 @@ public class ModItems {
 	public static Item ingot_apple;
 	public static Item ingot_melon;
 	public static Item ingot_cookie;
-	public static Item ingot_beefraw;
-	public static Item ingot_beefunraw;
+	public static Item ingot_beef_raw;
+	public static Item ingot_beef_unraw;
 	public static Item debug_edible;
 	public static Item edible_sugar;
 	
@@ -36,8 +36,8 @@ public class ModItems {
 		ingot_apple = new ItemIngot(36, 22, false).setUnlocalizedName("ingot_apple").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_apple");
 		ingot_melon = new ItemIngot(162, 97, false).setUnlocalizedName("ingot_melon").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_melon");
 		ingot_cookie = new ItemIngot(18, 4, false).setUnlocalizedName("ingot_cookie").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_lazy");
-		ingot_beefraw = new ItemIngot(27, 16, true).setUnlocalizedName("ingot_beefraw").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_beefraw");
-		ingot_beefunraw = new ItemIngot(72, 117, true).setUnlocalizedName("ingot_beefunraw").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_beefunraw");
+		ingot_beef_raw = new ItemIngot(27, 16, true).setUnlocalizedName("ingot_beef_raw").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_beefraw");
+		ingot_beef_unraw = new ItemIngot(72, 117, true).setUnlocalizedName("ingot_beef_unraw").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_beefunraw");
 		debug_edible = new ItemEdible(0, 0, false).setUnlocalizedName("debug_edible");
 		edible_sugar = new ItemEdible(1, 0.1F, false).setUnlocalizedName("edible_sugar").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":edible_sugar");
 	}
@@ -49,8 +49,8 @@ public class ModItems {
 		GameRegistry.registerItem(ingot_apple, ingot_apple.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_melon, ingot_melon.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_cookie, ingot_cookie.getUnlocalizedName());
-		GameRegistry.registerItem(ingot_beefraw, ingot_beefraw.getUnlocalizedName());
-		GameRegistry.registerItem(ingot_beefunraw, ingot_beefunraw.getUnlocalizedName());
+		GameRegistry.registerItem(ingot_beef_raw, ingot_beef_raw.getUnlocalizedName());
+		GameRegistry.registerItem(ingot_beef_unraw, ingot_beef_unraw.getUnlocalizedName());
 		GameRegistry.registerItem(debug_edible, debug_edible.getUnlocalizedName());
 		GameRegistry.registerItem(edible_sugar, edible_sugar.getUnlocalizedName());
 	}

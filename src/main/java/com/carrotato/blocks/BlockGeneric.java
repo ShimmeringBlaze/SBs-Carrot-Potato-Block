@@ -15,7 +15,7 @@ public class BlockGeneric extends Block{
 	
 	public void addInformation(ItemStack itemstack, EntityPlayer player, List list, boolean bool) {
 		
-		if (this == ModBlocks.block_beefraw) {
+		if (this == ModBlocks.block_beef_raw) {
 			list.add("Yep, it's a cubic meter of raw bovine meat");
 		}
 	}
