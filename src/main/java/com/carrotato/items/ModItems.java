@@ -16,6 +16,7 @@ public class ModItems {
 		registerItem();
 	}
 	
+	// Ingots
 	public static Item ingot_carrot;
 	public static Item ingot_potato;
 	public static Item ingot_baked;
@@ -24,12 +25,17 @@ public class ModItems {
 	public static Item ingot_cookie;
 	public static Item ingot_beef_raw;
 	public static Item ingot_beef_unraw;
+	
+	// Edible items
 	public static Item debug_edible;
 	public static Item edible_sugar;
+	public static Item red_sugar;
 	
 	/* TODO: Fix the goddamn saturation values and stop reading the minecraft wiki for this shit, use the vanilla code for fucks sake
 	 since it looks like the wiki and code values for saturation are different, you fucking lunatic */
 	private static void initializeItem() {
+		
+		// Ingots
 		ingot_carrot = new ItemIngot(27, 32, false).setUnlocalizedName("ingot_carrot").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_carrot");
 		ingot_potato = new ItemIngot(9, 9, false).setUnlocalizedName("ingot_potato").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_potato");
 		ingot_baked = new ItemIngot(45, 54, false).setUnlocalizedName("ingot_baked").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_baked");
@@ -38,11 +44,16 @@ public class ModItems {
 		ingot_cookie = new ItemIngot(18, 4, false).setUnlocalizedName("ingot_cookie").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_lazy");
 		ingot_beef_raw = new ItemIngot(27, 16, true).setUnlocalizedName("ingot_beef_raw").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_beefraw");
 		ingot_beef_unraw = new ItemIngot(72, 117, true).setUnlocalizedName("ingot_beef_unraw").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":ingot_beefunraw");
+		
+		// Edible items
 		debug_edible = new ItemEdible(0, 0, false).setUnlocalizedName("debug_edible");
 		edible_sugar = new ItemEdible(1, 0.1F, false).setUnlocalizedName("edible_sugar").setCreativeTab(CreativeTabs.tabFood).setTextureName(RefStrings.MODID + ":edible_sugar");
+		red_sugar = new ItemEdible(0, 0, false).setUnlocalizedName("red_sugar").setCreativeTab(CreativeTabs.tabMisc).setTextureName(RefStrings.MODID + ":red_sugar");
 	}
 	
 	private static void registerItem() {
+		
+		// Ingots
 		GameRegistry.registerItem(ingot_carrot, ingot_carrot.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_potato, ingot_potato.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_baked, ingot_baked.getUnlocalizedName());
@@ -51,7 +62,10 @@ public class ModItems {
 		GameRegistry.registerItem(ingot_cookie, ingot_cookie.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_beef_raw, ingot_beef_raw.getUnlocalizedName());
 		GameRegistry.registerItem(ingot_beef_unraw, ingot_beef_unraw.getUnlocalizedName());
+		
+		// Edible items
 		GameRegistry.registerItem(debug_edible, debug_edible.getUnlocalizedName());
 		GameRegistry.registerItem(edible_sugar, edible_sugar.getUnlocalizedName());
+		GameRegistry.registerItem(red_sugar, red_sugar.getUnlocalizedName());
 	}
 }

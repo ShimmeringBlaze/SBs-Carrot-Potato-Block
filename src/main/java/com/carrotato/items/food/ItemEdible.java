@@ -21,6 +21,9 @@ public class ItemEdible extends ItemFood{
 			if(stack.getItem() == ModItems.edible_sugar) { // TODO: Figure out how to reduce the consumption time
 				player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 100, 2));
 				player.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 100, 2));
+			} else if(stack.getItem() == ModItems.red_sugar) {
+				player.addPotionEffect(new PotionEffect(Potion.heal.id, 1, 1));
+				player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 150, 1));
 			}
 		}
 	}
